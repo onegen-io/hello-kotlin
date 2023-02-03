@@ -1,0 +1,20 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.10'
+}
+
+group 'io.onegen'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'kotlinx-serialization'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-datetime:0.4.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0'
+}
